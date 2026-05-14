@@ -32,7 +32,6 @@ export default function Activities() {
             key={index}
           >
             <h3>{activity.title}</h3>
-            <p>{activity.description}</p>
 
             <span className="view-project">View Project →</span>
           </a>
