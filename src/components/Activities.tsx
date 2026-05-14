@@ -1,22 +1,18 @@
 const activities = [
   {
     title: "FG Lab 2",
-    description: "React Components and TypeScript Basics",
     link: "https://andressit-nicko.github.io/FG_LAB3_Andres/?authuser=1",
   },
   {
     title: "FG Lab 3",
-    description: "Portfolio Contact Form using EmailJS",
     link: "https://andressit-nicko.github.io/FG_LAB2_Andres/?authuser=1",
   },
   {
     title: "MG LAB 2",
-    description: "Student Information Management System",
     link: "https://andressit-nicko.github.io/MG_LAB5_Andres/?authuser=1",
   },
   {
     title: "MG LAB 3",
-    description: "Simple Parking Tracker System",
     link: "https://andressit-nicko.github.io/MG_LAB3_Andres/?authuser=1",
   },
 ];
