@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background: #1f232b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #d8d8d8;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ff9ecf;
+}
+
+/* FIX SECTION SPACING */
+
+#home,
+#about,
+#activities,
+#contact {
+  scroll-margin-top: 100px;
+}
+
+/* HOME UPDATE */
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #fff0f5, #ffe4ec);
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.home-content h1 {
+  font-size: 75px;
+  color: #d16ba5;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 20px;
+  max-width: 700px;
+  line-height: 1.8;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .nav-links {
+    margin-top: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .home-content h1 {
+    font-size: 50px;
+  }
+}
+
+
+/* Home Section */
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom right, #ffe4ec, #f8d7ff, #fff0f5);
+  padding: 20px;
+}
+
+.home-content h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: #d16ba5;
+}
+
+.home-content p {
+  font-size: 20px;
+  max-width: 700px;
+  line-height: 1.8;
+}
+
+.home-content button {
+  margin-top: 25px;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 30px;
+  background: #d16ba5;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* About Section */
+.about {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #d16ba5;
+}
+
+.about-card {
+  max-width: 850px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  line-height: 1.8;
+}
+
+
+
+/* Activities Section */
+.activities {
+  padding: 80px 20px;
+  background: #fff0f5;
+}
+
+.activities h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #d16ba5;
+}
+
+.activity-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.activity-card {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.activity-card h3 {
+  color: #d16ba5;
+  margin-bottom: 15px;
+}
+
+.activity-card p {
+  line-height: 1.7;
+}
+
+
+
+
+/* Contact Section */
+
+.contact {
+  padding: 80px 20px;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #d16ba5;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  outline: none;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 15px;
+  background: #d16ba5;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form p {
+  margin-top: 15px;
+  text-align: center;
+}
